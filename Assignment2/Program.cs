@@ -18,12 +18,31 @@ namespace ConsoleApp1
                 students[i] = Console.ReadLine();
             }
 
+            //stundents names with their grades
+
             for (int i = 0; i < grades.Length; i++)
             {
                 Console.WriteLine(students[i] + ": " + grades[i]);
             }
 
              Console.Clear();
-        }
+
+            //Console is clear
+
+             Console.WriteLine("Now the console is clear");
+             Console.WriteLine();
+             
+             Console.WriteLine("Stuents names who fail this course");
+
+
+            for (int i = 0; i < grades.Length; i++)
+            {
+                if (grades[i] < 60)
+                Console.WriteLine(students[i] + ": " + grades[i]);
+            }
+
+
+            Console.ReadKey();
+        }  
     }
 }
