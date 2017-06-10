@@ -22,6 +22,8 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(students[i] + ": " + grades[i]);
             }
+
+             Console.Clear();
         }
     }
 }
