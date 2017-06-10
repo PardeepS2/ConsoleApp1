@@ -17,6 +17,11 @@ namespace ConsoleApp1
                 Console.Write("Enter Student name for position " + i + ": ");
                 students[i] = Console.ReadLine();
             }
+
+            for (int i = 0; i < grades.Length; i++)
+            {
+                Console.WriteLine(students[i] + ": " + grades[i]);
+            }
         }
     }
 }
