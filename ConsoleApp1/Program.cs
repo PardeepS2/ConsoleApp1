@@ -10,9 +10,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This is my first task");
-
-            Console.ReadKey();
+            string[] students = new string[5];
+            int[] grades = { 50, 90, 98, 44, 79 };
+            for (int i = 0; i < students.Length; i++)
+            {
+                Console.Write("Enter Student name for position " + i + ": ");
+                students[i] = Console.ReadLine();
+            }
         }
     }
 }
